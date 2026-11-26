@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BOCHITO CHOU</title>
+  <meta name="description" content="Vochio clásico a escala, azul metálico.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="BOCHO2.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO: logo grande + menú principal -->
+  <header class="header">
+    <a href="#inicio" class="logo" aria-label="Ir al inicio">
+      <img src="logo.png" alt="Logo de Bochito Chou">
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+    <nav class="nav" id="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Paquetes</a>
+      <a href="#video">Video</a>
+      <a href="#contacto" class="nav-cta">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- IMAGEN PRINCIPAL: el botón queda abajo -->
+  <section id="inicio" class="hero">
+    <img class="hero-img" src="BOCHITO.jpeg" alt="Vochio Clásico">
+    <div class="hero-text">
+      <a class="btn" href="#productos">Ver más</a>
+    </div>
+  </section>
+
+  <!-- CARRO: avanza de extremo a extremo y deja texto -->
+  <section class="road" aria-hidden="true">
+    <img id="car" class="car" src="vochio.png" alt="">
+    <div class="asphalt"></div>
+  </section>
+
+  <!-- MÓDULOS -->
+  <section id="productos" class="section">
+    <img class="cara cara-izq" style="top:4%" src="cara.png" alt="" aria-hidden="true">
+    <img class="cara cara-der" style="top:30%" src="cara.png" alt="" aria-hidden="true">
+    <img class="cara cara-izq" style="top:56%" src="cara.png" alt="" aria-hidden="true">
+    <img class="cara cara-der" style="top:82%" src="cara.png" alt="" aria-hidden="true">
+    <h2>Nuestros paquetes</h2>
+
+    <article class="module">
+      <img src="evento1.jpeg" alt="Evento con Bochito">
+      <div class="module-info">
+        <h3>Todo tipo de eventos</h3>
+        <ul>
+          <li>CUMPLEAÑOS</li>
+          <li>BAUTISOS</li>
+          <li>BABY SHOWERS</li>
+        </ul>
+        <!-- CAMBIA 520000000000 por tu número: 52 + 10 dígitos -->
+        <a class="btn" target="_blank" rel="noopener"
+           href="https://wa.me/520000000000?text=Hola%2C%20quiero%20informes%20para%20un%20evento%20(cumplea%C3%B1os%2C%20bautizo%20o%20baby%20shower)">Pedir informes</a>
+      </div>
+    </article>
+
+    <article class="module reverse">
+      <img src="evento2.jpeg" alt="Paquete Bocho sin placas">
+      <div class="module-info">
+        <h3>BOCHO SIN PLACAS</h3>
+        <ul>
+          <li>EQUIPO DE AUDIO</li>
+          <li>PERSONAL DE STAFF UNIFORMADO</li>
+          <li>ESCENOGRAFIA MAMPARA</li>
+          <li>REGALOS PARA LOS INVITADOS</li>
+          <li>REGALOS PARA LAS PERSONAS QUE LLEGUEN A PARTICIPAR</li>
+          <li>KIT DE REGALOS PARA EL FESTEJAD@</li>
+          <li>ANIMACIÓN</li>
+          <li>DINAMICAS</li>
+          <li>CONCURSOS</li>
+          <li>MALABARES PROFESIONALES</li>
+        </ul>
+        <a class="btn" target="_blank" rel="noopener"
+           href="https://wa.me/520000000000?text=Hola%2C%20quiero%20informes%20del%20paquete%20BOCHO%20SIN%20PLACAS">Pedir informes</a>
+      </div>
+    </article>
+
+    <article class="module">
+      <img src="evento3.jpeg" alt="Paquete Bocho tuneado">
+      <div class="module-info">
+        <h3>BOCHO TUNEADO</h3>
+        <ul>
+          <li>EQUIPO DE AUDIO</li>
+          <li>PERSONAL DE STAFF UNIFORMADO</li>
+          <li>ESCENOGRAFIA MAMPARA</li>
+          <li>REGALOS PARA LOS INVITADOS</li>
+          <li>REGALOS PARA LAS PERSONAS QUE LLEGUEN A PARTICIPAR</li>
+          <li>KIT DE REGALOS PARA EL FESTEJAD@</li>
+          <li>ANIMACIÓN</li>
+          <li>DINAMICAS</li>
+          <li>CONCURSOS</li>
+          <li>MALABARES PROFESIONALES</li>
+          <li>MALABARES CON FUEGO</li>
+          <li>MAGIA COMICA Y PROFESIONAL</li>
+          <li>SHOW DE MONOCICLO</li>
+          <li>MINI BATUCADA AL FINALIZAR</li>
+        </ul>
+        <a class="btn" target="_blank" rel="noopener"
+           href="https://wa.me/520000000000?text=Hola%2C%20quiero%20informes%20del%20paquete%20BOCHO%20TUNEADO">Pedir informes</a>
+      </div>
+    </article>
+  </section>
+
+  <!-- VIDEO -->
+  <section id="video" class="section section-dark">
+    <img class="cara cara-izq" style="top:12%" src="cara.png" alt="" aria-hidden="true">
+    <img class="cara cara-der" style="top:62%" src="cara.png" alt="" aria-hidden="true">
+    <h2>Mira el video</h2>
+    <div class="video-box">
+      <video controls preload="metadata">
+        <source src="video.mp4" type="video/mp4">
+        Tu navegador no soporta video.
+      </video>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <footer id="contacto" class="footer">
+    <h2>Contacto</h2>
+    <p>Pedidos: <a href="mailto:correo@tudominio.com">correo@tudominio.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/520000000000" target="_blank" rel="noopener">+52 00 0000 0000</a></p>
+  </footer>
+
+  <!-- MÚSICA DE FONDO -->
+  <audio id="musica" src="volare.mpeg" loop preload="auto"></audio>
+  <button id="musicBtn" class="music-btn" aria-label="Silenciar o activar música">🔊</button>
+
+  <script src="BOCH3.js"></script>
+</body>
+</html>
